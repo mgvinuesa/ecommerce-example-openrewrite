@@ -17,6 +17,7 @@ package com.example.demo.prices.infrastructure.persistence.mapper;
 
 import java.util.List;
 
+
 import org.mapstruct.Mapper;
 
 import com.example.demo.prices.domain.model.Price;

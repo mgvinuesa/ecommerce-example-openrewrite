@@ -17,10 +17,11 @@ package com.example.demo.prices.domain.usecase.search;
 
 import java.util.List;
 
-import com.example.demo.prices.domain.model.Price;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+
+import com.example.demo.prices.domain.model.Price;
 
 @AllArgsConstructor
 @Getter

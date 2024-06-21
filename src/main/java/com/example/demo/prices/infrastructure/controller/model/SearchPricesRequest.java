@@ -17,6 +17,7 @@ package com.example.demo.prices.infrastructure.controller.model;
 
 import java.time.LocalDateTime;
 
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 //Don't use lombok due to bad integration with Jackson & JsonFormat annotation

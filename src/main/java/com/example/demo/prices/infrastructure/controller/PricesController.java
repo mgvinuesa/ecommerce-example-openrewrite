@@ -15,6 +15,7 @@
  */
 package com.example.demo.prices.infrastructure.controller;
 
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,8 +26,6 @@ import com.example.demo.prices.domain.usecase.search.SearchPricesResult;
 import com.example.demo.prices.domain.usecase.search.SearchPricesUseCase;
 import com.example.demo.prices.infrastructure.controller.model.PriceListResponse;
 import com.example.demo.prices.infrastructure.controller.model.SearchPricesRequest;
-
-import lombok.AllArgsConstructor;
 
 @RestController
 @RequestMapping(path = "/prices")
