@@ -130,6 +130,7 @@
 					<activeRecipes>
 						<recipe>org.openrewrite.search.FindCommitters</recipe>
 						<recipe>org.openrewrite.java.AddApache2LicenseHeader</recipe>
+						<recipe>org.openrewrite.java.format.BlankLines</recipe>
 						<recipe>com.example.EcommerceRecipe</recipe>
 					</activeRecipes>
 				</configuration>
