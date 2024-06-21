@@ -3,3 +3,6 @@ name: com.example.EcommerceRecipe
 recipeList:
   - org.openrewrite.java.OrderImports:
        removeUnused: true
+  - org.openrewrite.java.dependencies.DependencyList:
+       scope: Compile
+       includeTransitive: true
