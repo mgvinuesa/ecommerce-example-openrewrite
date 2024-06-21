@@ -6,3 +6,5 @@ recipeList:
   - org.openrewrite.java.dependencies.DependencyList:
        scope: Compile
        includeTransitive: true
+  - org.openrewrite.java.dependencies.DependencyVulnerabilityCheck:
+       overrideTransitive: true
