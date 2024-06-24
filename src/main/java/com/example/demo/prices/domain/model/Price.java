@@ -23,8 +23,6 @@ import java.util.Currency;
 import lombok.Builder;
 import lombok.Getter;
 
-import com.example.demo.prices.domain.model.UnusedClass;
-
 @Builder
 @Getter
 public class Price {
