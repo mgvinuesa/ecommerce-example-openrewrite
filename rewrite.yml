@@ -1,7 +1,16 @@
 type: specs.openrewrite.org/v1beta/recipe
-name: com.example.CambioDePaqueteria
+name: com.example.EcommerceRecipe
 recipeList:
-  - org.openrewrite.java.ChangePackage:
-      oldPackageName: com.example.demo
-      newPackageName: com.example.openrewrite
-      recursive: true
+  - org.openrewrite.java.OrderImports:
+       removeUnused: true
+  - org.openrewrite.java.dependencies.DependencyList:
+       scope: Compile
+       includeTransitive: true
+  - org.openrewrite.java.dependencies.DependencyVulnerabilityCheck:
+       overrideTransitive: true
+  - org.openrewrite.text.Find:
+       caseSensitive: true
+       find: implements SearchPricesRepository
+       filePattern: '**/*.java'
+  - org.openrewrite.java.search.FindImplementations:
+       typeName: com.example.demo.prices.domain.usecase.search.SearchPricesUseCase

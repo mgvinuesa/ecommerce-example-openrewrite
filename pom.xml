@@ -121,7 +121,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<!--
+			
 			<plugin>
 				<groupId>org.openrewrite.maven</groupId>
 				<artifactId>rewrite-maven-plugin</artifactId>
@@ -129,15 +129,8 @@
 				<configuration>
 					<exportDatatables>true</exportDatatables>
 					<activeRecipes>
-					
-						<recipe>org.openrewrite.search.FindCommitters</recipe>
-						<recipe>org.openrewrite.java.AddApache2LicenseHeader</recipe>
-						<recipe>org.openrewrite.java.format.BlankLines</recipe>
-						<recipe>com.example.EcommerceRecipe</recipe>
-						
-					
-						<recipe>org.openrewrite.java.search.FindImplementationsCustom</recipe>
-					</activeRecipes>
+           				 <recipe>org.openrewrite.java.dependencies.DependencyVulnerabilityCheck</recipe>
+        			</activeRecipes>
 				</configuration>
 				<dependencies>
 					<dependency>
@@ -152,7 +145,7 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			-->
+			
 
 		</plugins>
 	</build>
